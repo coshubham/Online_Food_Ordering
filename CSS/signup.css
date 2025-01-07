@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffeae0;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: 0 120px;
+    margin-top: 120px;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.menu{
+     margin-top: -20px;
+}
+.nav {
+    width: 100%;
+    margin-left: -80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px;
+    cursor: pointer;
+}
+
+.nav .logo h1 {
+    color: #000;
+    font-size: 30px;
+    font-family: cooper black;
+    font-weight: 600;
+}
+
+.nav .logo h1:hover {
+    font-size: 30.2px;
+    color: #ec4d37;
+    font-family: cooper black;
+    font-weight: 600;
+
+}
+
+.nav .logo b {
+    color: #ec4d37;
+}
+
+.nav .logo b:hover {
+    color: #000;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-family: cooper black;
+    font-size: 17px;
+}
+
+.nav ul .active::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ec4d37;
+    display: flex;
+    position: relative;
+}
+
+.nav ul .active:hover::after {
+    width: 100%;
+
+}
+
+/* body {
+    background-color: #f7f9fc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+} */
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    margin-top: -50px;
+    margin-left: 70px;
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 10px #ec4d37;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    font-weight: 900;
+    font-family: sans-serif;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #ec4d37;
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #ec4d37;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    animation: buttonIn 0.5s ease-in-out;
+}
+
+.submit-btn:hover {
+    background-color: #ec4d37;
+    transform: scale(1.05);
+}
+
+.submit-btn:active {
+    transform: scale(0.95);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes buttonIn {
+    from {
+        transform: scale(0.8);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 80px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content-left {
+    margin-top: -35rem;
+}
+
+.content .content-left img {
+    margin-top: 35rem;
+    margin-left: -50rem;
+    width: 400px;
+    height: auto;
+    user-select: none;
+    animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.content-right .container a {
+    font-family: sans-serif;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: #999;
+    font-size: 0.9rem
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 90px;
+    background-color: #fe523b;
+}
+
+#preloader {
+    background: #1b1d21 url('../images/loader.gif') no-repeat center center;
+    background-size: 45%;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+
+}

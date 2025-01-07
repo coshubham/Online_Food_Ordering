@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 100px;
+    background-color: #191919;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.nav .logo h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: cooper black;
+    font-weight: 600;
+}
+
+.nav .logo h1:hover {
+    font-size: 30.2px;
+    color: #ec4d37;
+    font-family: cooper black;
+    font-weight: 600;
+
+}
+
+.nav .logo b {
+    color: #ec4d37;
+}
+
+.nav .logo b:hover {
+    color: #fff;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: cooper black;
+    font-size: 17px;
+}
+
+.nav ul .active::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ec4d37;
+    display: flex;
+    position: relative;
+}
+
+.nav ul .active:hover::after {
+    width: 100%;
+
+}
+
+.icon span i {
+    position: relative;
+    color: #fe523b;
+    font-size: 25px;
+    padding: 0px 70px 0px;
+
+}
+
+.icon span i:hover {
+    color: #fff;
+}
+
+.icon .quantity {
+    background-color: #191919;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    padding: 2px 6px;
+    margin-left: -73px;
+    margin-bottom: -5px;
+}
+
+
+.search_wrap {
+    width: 500px;
+    margin: 1px auto;
+    margin-top: 20px;
+}
+
+.search_wrap .search_box {
+    position: relative;
+    width: 500px;
+    height: 50px;
+}
+
+.search_wrap .search_box .input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 10px 20px;
+    border-radius: 3px;
+    font-size: 18px;
+    border: 3.5px solid #ec4d37;
+}
+
+.search_wrap .search_box .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 100%;
+    background: #fe523b;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.search_wrap .search_box .btn:hover {
+    background: #ec4d37;
+}
+
+.search_wrap .search_box .btn.btn_common .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+.search_wrap.search_wrap .search_box .input {
+    padding-right: 80px;
+    outline: none;
+}
+
+.search_wrap.search_wrap .search_box .input {
+    border-radius: 100px;
+}
+
+.search_wrap.search_wrap .search_box .btn {
+    right: 0px;
+    border-radius: 100%;
+}
+
+/* CARD */
+.category {
+    display: inline-block;
+    margin-top: 120px;
+    margin-bottom: 10px;
+ 
+}
+
+.category .card {
+    width: 269px;
+    height: 260px;
+    display: inline-block;
+    margin: 25px;
+    margin-left: 52.5px;
+    outline: 2px solid #ff8800;
+    border-radius: 10px;
+    position: relative;
+    background: whitesmoke;
+}
+.category .card img {
+    width: 120px;
+    height: auto;
+    bottom: 228px;
+    left: 70px;
+    object-fit: cover;
+    object-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    box-shadow: 0px 8px #fe523b;
+    border-radius: 20%;
+}
+
+.category .card .food-title {
+    padding: 40px 0 10px;
+    margin-top: 2px;
+}
+
+.category .card .food-title h1 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+
+.category .card .desc-food p {
+    font-size: 13px;
+    text-align: center;
+    padding: 5px;
+    font-weight: 400;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+
+.category .card .price {
+    display: flex;
+    align-items: center;
+    font-family: sans-serif;
+    margin: 23px;
+    font-weight: 900;
+    justify-content: space-between;
+}
+
+.btn-cart {
+    color: whitesmoke;
+    border: none;
+    background-color: #fe523b;
+    font-size: 12px;
+    font-weight: 700;
+    padding:6px;
+    text-align: center;
+    font-family: sans-serif;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-cart:hover {
+    color: #fe523b;
+    background-color: #fff;
+    font-weight: bold;
+
+}
+
+.signup {
+    background-color: #ec4d37;
+    color: #fff;
+    border: 3px solid #ec4d37;
+    outline: none;
+    border-radius: 20px;
+}
+
+.signup:hover {
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fe523b;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 90px;
+    background-color: #fe523b;
+}
+
+#preloader {
+    background: #1b1d21 url('../images/loader.gif') no-repeat center center;
+    background-size: 45%;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 90px;
+    background-color: #fe523b;
+}

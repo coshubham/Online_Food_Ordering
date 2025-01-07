@@ -1,0 +1,87 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #191919;
+    padding: 10px;   
+}
+.main{
+    margin-top: -10px;
+    background-color: #ffeae0;
+    border-radius: 50px 0.5px 50px 0.5px;
+}
+
+.nav {
+    width: 86%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px;
+    margin-top: -60px;
+    cursor: pointer;
+    margin-left: 110px;
+}
+
+.nav .logo h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: cooper black;
+    font-weight: 600;
+}
+
+.nav .logo h1:hover {
+    font-size: 30.2px;
+    color: #ec4d37;
+    font-family: cooper black;
+    font-weight: 600;
+
+}
+
+.nav .logo b {
+    color: #ec4d37;
+}
+
+.nav .logo b:hover {
+    color: #fff;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: cooper black;
+    font-size: 17px;
+}
+
+.nav ul .active::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ec4d37;
+    display: flex;
+    position: relative;
+}
+
+.nav ul .active:hover::after {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 90px;
+    background-color: #fe523b;
+}

@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Ubuntu&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background-color: #191919;
+}
+footer .container2{
+    background-color: black;
+    width: 101.3%;
+    position: relative;
+    align-items: center;
+    border-radius: 5px;
+    margin-top: 80px;
+    margin-bottom: -8px;
+    left: -0.5rem;
+}
+
+.row2{
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+}
+.footer-col1 ul{
+    list-style: none;
+}
+
+.footer-col1 h4{
+    color: white;
+    margin-bottom: 20px;
+    font-size: 22px;
+    position: relative;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.footer-col1 h4::before{
+    content: '';
+    width: 70px;
+    height: 2px;
+    position: absolute;
+    background-color: #ec4d37;
+    bottom: -10px;
+}
+
+.footer-col1 ul li{
+    padding: 8px 0;
+}
+.footer-col1 ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-left: -25px;
+    opacity: 0.7;
+    transition: 0.5s;
+}
+.footer-col1 ul li a:hover{
+    opacity: 1;
+}
+.footer-col1 input{
+    border: none;
+    width: 250px;
+    height: 45px;
+    display: block;
+    padding-left: 20px;
+    margin: 14px 0;
+}
+
+.footer-col1 .inputSubmit{
+    padding: 0px 20px;
+    background-color: #ec4d37;
+    border-radius: 20px;
+    border: none;
+    color: white;
+}
+.col1 p{
+    color:#fff;
+}
+
+.row2 .socialIcons i{
+    display: inline-block;
+    color: white;
+    font-size: 20px;
+    margin: 0 15px;
+    transition: 0.5s;
+}
+
+.row2 .socialIcons i:hover{
+    color: #ec4d37;
+}
+
+@media (max-width: 600px){
+    footer .row2{
+        flex-direction: column;
+        padding: 20px 30px;
+    }
+
+    footer .footer-col1 ul{
+        margin-left: 20px;
+        margin-bottom: 20px;
+    }
+    .footer-col1 input{
+        width: 100%;
+    }
+}

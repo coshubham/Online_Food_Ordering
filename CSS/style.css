@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0 100px;
+    background-color: #191919;
+}
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    cursor: pointer;
+}
+
+.nav .logo h1 {
+    color: #fff;
+    font-size: 30px;
+    font-family: cooper black;
+    font-weight: 600;
+}
+
+.nav .logo h1:hover {
+    font-size: 30.2px;
+    color: #ec4d37;
+    font-family: cooper black;
+    font-weight: 600;
+
+}
+
+.nav .logo b {
+    color: #ec4d37;
+}
+
+.nav .logo b:hover {
+    color: #fff;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.nav ul li {
+    margin-right: 30px;
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-family: cooper black;
+    font-size: 17px;
+}
+
+.nav ul .active::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: #ec4d37;
+    display: flex;
+    position: relative;
+}
+
+.nav ul .active:hover::after {
+    width: 100%;
+
+}
+
+.icon span i {
+    position: relative;
+    color: #fe523b;
+    font-size: 25px;
+    padding: 0px 70px 0px;
+
+}
+
+.icon span i:hover {
+    color: #fff;
+}
+
+.icon .quantity {
+    background-color: #191919;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    position: absolute;
+    padding: 2px 6px;
+    margin-left: -73px;
+    margin-bottom: -5px;
+}
+
+input {
+    padding: 10px 30px;
+    margin: 2px;
+    cursor: pointer;
+    font-weight: 900;
+}
+
+.signin {
+    background: transparent;
+    border: 3px solid #ec4d37;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.signin:hover {
+    background-color: #fe523b;
+    border: 3px solid #ec4d37;
+    border-radius: 20px;
+    color: #fff;
+}
+
+.signup {
+    background-color: #ec4d37;
+    color: #fff;
+    border: 3px solid #ec4d37;
+    outline: none;
+    border-radius: 20px;
+}
+
+.signup:hover {
+    background: transparent;
+    color: #fff;
+    border: 3px solid #fe523b;
+    border-radius: 20px;
+}
+
+.username h1 {
+    position: relative;
+    cursor: pointer;
+    color: white;
+    font-family: cooper black;
+    margin-top: 30px;
+    font-size: 25px;
+}
+
+.username h1 b {
+    color: whitesmoke;
+}
+
+.username h1 b:hover {
+    color: lime;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 30px;
+    margin-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.content .content-left {
+    display: block;
+    width: 100%;
+}
+
+.content .content-left .info {
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.content .content-left .info h2 {
+    font-size: 56px;
+    font-family: sans-serif;
+    margin-bottom: 30px;
+    color: #ec4d37;
+}
+
+.content .content-left .info p {
+    font-size: 21px;
+    line-height: 2pc;
+    margin-bottom: 30px;
+    font-family: sans-serif;
+    color: whitesmoke;
+}
+
+.content .content-left button {
+    padding: 10px 20px;
+    background-color: #ec4d37;
+    color: #fff;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: 700;
+    border: 5px solid #ec4d37;
+    cursor: pointer;
+}
+
+.content .content-left button:hover {
+    background: transparent;
+    border: 5px solid #ec4d37;
+    color: whitesmoke;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+.content .content-right img {
+    width: 400px;
+    height: auto;
+    position: relative;
+    user-select: none;
+    animation: rotate 18s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.category {
+    margin-top: 150px;
+    width: 100%;
+    margin-bottom: 100px;
+    justify-content: center;
+}
+.category h3 {
+    font-size: 40px;
+    font-family: cooper black;
+    text-align: center;
+    margin-bottom: 50px;
+    color: whitesmoke;
+}
+
+.category p {
+    font-size: 15px;
+    font-family: sans-serif;
+    text-align:justify;
+    line-height: 2pc;
+    font-weight: 500;
+    margin-bottom: 50px;
+    margin: 10px;
+    color: whitesmoke;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 90px;
+    background-color: #fe523b;
+}
+
+#preloader {
+    background: #1b1d21 url('../images/loader.gif') no-repeat center center;
+    background-size: 45%;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    body {
+        margin: 0 50px;
+    }
+
+    .nav ul li {
+        margin-right: 20px;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+        /* Stack content on smaller screens */
+    }
+
+    .content .content-right img {
+        width: 100%;
+        /* Make the image responsive */
+    }
+
+    .category .card-list {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2 cards per row */
+    }
+
+    .category .card-list .card {
+        margin: 20px;
+        /* Reduce margin for smaller screens */
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0 20px;
+    }
+
+    .nav .logo h1 {
+        font-size: 24px;
+    }
+
+    .nav ul li {
+        margin-right: 15px;
+    }
+
+    .content .content-left .info h2 {
+        font-size: 40px;
+        /* Smaller heading */
+    }
+
+    .content .content-left .info p {
+        font-size: 18px;
+        /* Smaller paragraph */
+    }
+
+    .category .card-list {
+        grid-template-columns: 1fr;
+        /* 1 card per row */
+    }
+
+    .icon span i {
+        padding: 0 30px;
+        /* Reduce padding */
+    }
+}
+
+@media (max-width: 480px) {
+    .nav {
+        flex-direction: column;
+        /* Stack navigation items vertically */
+        align-items: flex-start;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        /* Stack navigation links vertically */
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+        /* Space between links */
+    }
+
+    .category .list-items h3 {
+        font-size: 18px;
+        /* Smaller heading */
+    }
+
+    .category .card .food-title h1 {
+        font-size: 14px;
+        /* Smaller food title */
+    }
+
+    .category .card .desc-food p {
+        font-size: 12px;
+        /* Smaller description */
+    }
+
+    .username h1 {
+        font-size: 20px;
+        /* Smaller username heading */
+    }
+}
+
+@media (max-width:768px) {
+    .card-list {
+        padding: 20px;
+    }
+}
