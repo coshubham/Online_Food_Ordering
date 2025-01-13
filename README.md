@@ -1,4 +1,4 @@
-Created By Shubham Kumar Yadav and Prachi Khedia.
+Created By Shubham Kumar Yadav.
 
 Project Name:- Foodhut(Online food ordering) .
 
